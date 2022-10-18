@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+#cherries-text {
+    color: #9c0e11;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 96px;
+    letter-spacing: 16px;
+    text-align: center;
+    margin-top: 67%;
+}
+#big-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 175px;
+    letter-spacing: 18px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+    margin-top: 130px;
+    z-index: 1;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.grid {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.left {
+    height: auto;
+    border: none;
+    background: #fff;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.right {
+    border: none;
+    background: #b9b9b9;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
