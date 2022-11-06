@@ -10,7 +10,7 @@ Fonts are separated by a | */
   --accent1-color: #953948;
   --accent2-color: #21874E;
   --accent3-color: #3353A3;
-  --text-color: #FFFEEE;
+  --text-color: #e6ce8d;
   --text-hover: #e6ce8d;
   --unused-color: #be8732;
   /* Each button will have a different accent color. The unused color is for if I end up needing more than 3 buttons. */
@@ -21,27 +21,30 @@ Fonts are separated by a | */
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #2A2F54;  /* headlines on a white background */ 
-  --headline-color-on-color: #FFFEEE; /* headlines on a colored background */ 
+  --headline-color-on-color: #fdecbf; /* headlines on a colored background */ 
   --paragraph-color-on-white: #2A2F54; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #FFFEEE; /* paragraph text on a colored background */ 
+  --paragraph-color-on-color: #fdecbf; /* paragraph text on a colored background */ 
   --paragraph-background-color: #2A2F54;
-  --nav-link-color: #FFFEEE;
+  --nav-link-color: #fdecbf;
   --nav-background-color: #161537;
-  --nav-hover-link-color: #e6ce8d;
+  --nav-hover-link-color: #edc278;
   --nav-hover-background-color: #161537;
 }
 
 #hue-shifting {
-  font-size: 18px;
-  margin-top: -79px;
+  font-family: var(--paragraph-font);
+  font-size: 30px;
+  margin-top: -77px;
 }
 #anti-aliasing {
-  font-size: 18px;
-  margin-top: -79px;
+  font-family: var(--paragraph-font);
+  font-size: 30px;
+  margin-top: -77px;
 }
 #shading {
-  font-size: 18px;
-  margin-top: -79px;
+  font-family: var(--paragraph-font);
+  font-size: 30px;
+  margin-top: -77px;
 }
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
