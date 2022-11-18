@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Pixels - Home</title>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/home_button.png">
+        </a>
+        <nav>
+            <a href="hue-shifting.html">
+                <img src="images/red_button.png">
+                <div id="hue-shifting">
+                    Hue Shifting
+                </div>
+            </a>
+            <a href="#">
+                <img src="images/green_button.png">
+                <div id="anti-aliasing">
+                    Anti-aliasing
+                </div>
+            </a>
+             <!-- <a href="#"> -->
+                <img src="images/blue_button.png">
+                <div id="page-4">
+                    Page 4 (hidden) <!-- Page 4 will be hidden or commented out until it has content -->
+                </div>
+            <!-- </a> -->
+            <!-- <a href="#"> -->
+                <img src="images/yellow_button.png">
+                <div id="page-5">
+                    Page 5 (hidden) <!-- Page 5 will be hidden or commented out until it has content -->
+                </div>
+            <!-- </a> -->
+        </nav>
+    </header>
+    <main>
+        <div class="aa-top">
+            <p>
+                In pixel art, the canvas is a grid with a limited resolution. Pixel artists need to try and get the most out of
+                this limited grid. This is where Anti-aliasing comes in. Anti-aliasing is a method of smoothing out jagged edges
+                on angled lines and curves. It gets more out of the grid, allowing for smoother results without increasing or mixing
+                resolutions (known as "mixels"). Mixing resolutions should generally be avoided. Anti-aliasing involves placing midtone
+                pixels between an edge and the color(s) the edge is touching. For example if you had a black line on a white background,
+                you would use gray pixels for anti-aliasing. This color acts as a "half pixel" without actually changing the resolution
+                of the image. There are many ways to handle anti-aliasing, but will generalize them into what I call "Outline Anti-aliasing"
+                and "Inline Anti-aliasing". Outline anti-aliasing is the one I see most often, and involves adding pixels around the edges
+                of a line without changing the line itself. Outline Anti-aliasing is safe and easy to learn and use. Inline Anti-aliasing
+                is similar to Outline Anti-aliasing, but sometimes pixels are replaced instead of added. It's more difficult to do
+                correctly, but when applied well the original shape and form of the line is better preserved.
+            </p>
+            <section class="aa-example">
+                <h4>None</h4>
+                <h4>Outline</h4>
+                <h4>Inline</h4>
+                <img src="images/anti-aliasing_example_dark.png" alt="example of anti-aliasing">
+            </section>
+        </div>
+        <div class="aa-bottom">
+            <section class="aa-explanation">
+                <h4>
+                    Can you tell the difference between the left and right sides? The left side has anti-aliasing, while the right
+                    side does not. It's easiest to see the difference it makes if you look at the eyes and ears!
+                </h4>
+                <img src="images/anti-aliasing_explanation.png">
+            </section>
+            <p>
+                It's worth noting that Anti-aliasing is not always necessary, and when it is used it doesn't always need to be applied
+                to every line in a piece. Sometimes it's only needed on a few pixels, to deal with a few particularly jagged lines or
+                to smooth a transition between colors. Also, overuse of Anti-aliasing can sometimes lead to obvious lines (known as
+                "banding") that break the illusion of pixel art. While you can see the pixels in a piece, pixel art generally tries
+                to hide the grid itself. Overuse of Anti-aliasing can also add a lot of unnecessary "noise" to a piece. Noise is
+                unnecessary information that distracts viewers from the intended picture.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <a href="site-plan.html">
+            RGB Pixels Site Plan
+        </a>
+    </footer>
+</body>
+</html>
