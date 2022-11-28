@@ -193,7 +193,8 @@ footer a:hover {
   opacity: 1;
 }
 .text {
-  color: white;
+  color: var(--headline-color-on-color);
+  font-family: var(--paragraph-font);
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -202,4 +203,5 @@ footer a:hover {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  margin-top: 1px;
 }
