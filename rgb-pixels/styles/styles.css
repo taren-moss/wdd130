@@ -139,6 +139,7 @@ nav a:hover {
   grid-row: 2/3;
   margin-top: -324px;
   margin-left: -18px;
+  z-index: 1;
 }
 footer {
   height: 100px;
@@ -160,4 +161,45 @@ footer a:hover {
   color: var(--nav-hover-link-color);
   font-family: var(--heading-font);
   font-size: 1.2em;
+}
+
+/* Page 2 CSS */
+
+
+/* Extra Effects */
+.container {
+  position: relative;
+}
+.image {
+  display: block;
+  width: 288px;
+  margin-bottom: 3px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10%;
+  width: 128px;
+  margin-top: -60px;
+  margin-left: 80px;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: var(--primary-color);
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
