@@ -134,9 +134,8 @@ nav a:hover {
   grid-column: 4/5;
 }
 .frame {
-  margin: 0 auto;
+  position: relative;
   width: 324px;
-  grid-row: 2/3;
   margin-top: -324px;
   margin-left: -18px;
   z-index: 1;
@@ -164,7 +163,72 @@ footer a:hover {
 }
 
 /* Page 2 CSS */
-
+.hue-content {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 500px 500px 500px;
+  grid-template-rows: 360px 360px;
+  background-color: var(--secondary-color);
+  text-align: center;
+  justify-content: center;
+}
+.hue-info-top {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  width: 875px;
+  height: 288px;
+  margin: 0 auto;
+  margin-left: 20px;
+  color: var(--headline-color-on-color);
+  font-family: var(--paragraph-font);
+  background-color: var(--primary-color);
+}
+.hue-info-top p {
+  padding: 30px;
+  font-size: 1.45em;
+  margin: 0 auto;
+}
+.hue-info-bottom {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  width: 875px;
+  height: 192px;
+  margin: 0 auto;
+  margin-left: 96px;
+  margin-top: 48px;
+  color: var(--headline-color-on-color);
+  font-family: var(--paragraph-font);
+  background-color: var(--primary-color);
+}
+.hue-info-bottom p {
+  padding: 30px;
+  font-size: 1.45em;
+  margin: 0 auto;
+}
+#shift-example {
+  width: 288px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 0 auto;
+}
+#shift-explanation {
+  width: 288px;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  margin: 0 auto;
+}
+ul {
+  margin-top: -316px;
+  margin-left: 27px;
+  list-style: none;
+  text-align: left
+}
+li {
+  margin-top: 9px;
+  font-family: var(--paragraph-font);
+  color: var(--headline-color-on-color);
+  font-size: 1.2em;
+}
 
 /* Extra Effects */
 .container {
@@ -189,7 +253,22 @@ footer a:hover {
   transition: .3s ease;
   background-color: var(--primary-color);
 }
+.hue-overlay {
+  position: absolute;
+  grid-template-columns: 1fr 1fr;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 12.5%;
+  width: 288px;
+  opacity: 0;
+  transition: .3s ease;
+}
 .container:hover .overlay {
+  opacity: 1;
+}
+.container:hover .hue-overlay {
   opacity: 1;
 }
 .text {
@@ -203,5 +282,31 @@ footer a:hover {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  margin-top: 1px;
+}
+.text-left {
+  color: var(--headline-color-on-color);
+  font-family: var(--paragraph-font);
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+  margin-top: 1px;
+}
+.text-right {
+  color: var(--headline-color-on-color);
+  font-family: var(--paragraph-font);
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: right;
   margin-top: 1px;
 }
