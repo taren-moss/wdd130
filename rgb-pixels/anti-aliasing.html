@@ -9,35 +9,48 @@
 </head>
 <body>
     <header>
-        <img class=nav-bar-img src="images/nav_bar.png" alt="">
+        <img id=nav-bar-img class="themed-img" src="images/themes/rnbw/nav_bar.png" alt="">
         <nav>
             <a href="index.html">
-                <img src="images/home_button.png" alt="">
+                <img class="themed-img" src="images/themes/rnbw/home_button.png" alt="">
             </a>
             <a href="hue-shifting.html">
-                <img src="images/red_button.png" alt="">
-                <div id="hue-shifting">
+                <img class="themed-img" src="images/themes/rnbw/red_button.png" alt="">
+                <div id="hue-shifting" class="themed-text hover-text">
                     Hue Shifting
                 </div>
             </a>
             <a href="#">
-                <img src="images/green_button.png" alt="">
-                <div id="anti-aliasing">
+                <img class="themed-img" src="images/themes/rnbw/yellow_button.png" alt="">
+                <div id="anti-aliasing" class="themed-text hover-text">
                     Anti-aliasing
                 </div>
             </a>
             <a href="#">
-                <img src="images/blue_button.png" alt="">
-                <div id="page-4">
+                <img class="themed-img" src="images/themes/rnbw/green_button.png" alt="">
+                <div id="page-4" class="themed-text hover-text">
                     Coming Soon <!-- Page 4 will be hidden or commented out until it has content -->
                 </div>
             </a>
             <a href="#">
-                <img src="images/yellow_button.png" alt="">
-                <div id="page-5">
+                <img class="themed-img" src="images/themes/rnbw/blue_button.png" alt="">
+                <div id="page-5" class="themed-text hover-text">
                     Coming Soon <!-- Page 5 will be hidden or commented out until it has content -->
                 </div>
             </a>
+            <div class="dropdown">
+                <div id="fake_a">
+                    <img src="images/themes/rnbw/settings_button.png" alt="" onclick="myFunction()" class="dropbutton">
+                    <div id="settings_text" onclick="myFunction()" class="dropbutton">
+                        ▼
+                    </div>
+                </div>
+                <div id="settings" class="dropdown-content">
+                    <a href="#" onclick="setTheme(rnbwTheme)" class="themed-text">RNBW Theme</a>
+                    <a href="#" onclick="setTheme(rgbTheme)" class="themed-text">RGB Theme</a>
+                  </div>
+                  <script src="scripts/test.js"></script>
+            </div>
         </nav>
     </header>
     <main>
@@ -57,8 +70,8 @@
             </div>
             <div id="aa-example">
                 <div class="container">
-                    <img src="images/anti-aliasing_example_dark.png" alt="example of anti-aliasing">
-                    <img class="frame" src="images/image_frame.png" alt="">
+                    <img src="images/themes/rnbw/anti-aliasing_example_dark.png" alt="example of anti-aliasing" class="themed-img">
+                    <img class="frame" src="images/themes/rnbw/image_frame.png" alt="">
                     <div class="aa-overlay">
                         <div class="aa-text-left">No AA</div>
                         <div class="aa-text-center">Outline</div>
@@ -69,7 +82,7 @@
             <div id="aa-explanation">
                 <div class="container">
                     <img src="images/anti-aliasing_explanation.png" alt="">
-                    <img class="frame" src="images/image_frame.png" alt="">
+                    <img class="frame" src="images/themes/rnbw/image_frame.png" alt="">
                     <div class="aa-explanation-text">
                         Can you tell the difference between the left and right sides? The left side has anti-aliasing, while the right
                         side does not. It's easiest to see the difference it makes if you look at the eyes and ears!
@@ -96,7 +109,9 @@
             <a href="site-plan.html">
                 RGB Pixels Site Plan
             </a>
+            <p>This site uses a cookie to remember the theme.</p>
         </div>
     </footer>
 </body>
+<script src="scripts/themes.js"></script>
 </html>

@@ -10,8 +10,8 @@ Fonts are separated by a | */
   --accent1-color: #953948;
   --accent2-color: #21874E;
   --accent3-color: #3353A3;
-  --text-color: #e6ce8d;
-  --text-hover: #e6ce8d;
+  --text-color: #fdecbf;
+  --text-hover: #fdecbf;
   --unused-color: #be8732;
   /* Each button will have a different accent color. The unused color is for if I end up needing more than 3 buttons. */
 

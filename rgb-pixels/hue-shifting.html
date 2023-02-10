@@ -9,35 +9,48 @@
 </head>
 <body>
     <header>
-        <img class=nav-bar-img src="images/nav_bar.png" alt="">
+        <img id=nav-bar-img class="themed-img" src="images/themes/rnbw/nav_bar.png" alt="">
         <nav>
             <a href="index.html">
-                <img src="images/home_button.png" alt="">
+                <img class="themed-img" src="images/themes/rnbw/home_button.png" alt="">
             </a>
             <a href="#">
-                <img src="images/red_button.png" alt="">
-                <div id="hue-shifting">
+                <img class="themed-img" src="images/themes/rnbw/red_button.png" alt="">
+                <div id="hue-shifting" class="themed-text hover-text">
                     Hue Shifting
                 </div>
             </a>
             <a href="anti-aliasing.html">
-                <img src="images/green_button.png" alt="">
-                <div id="anti-aliasing">
+                <img class="themed-img" src="images/themes/rnbw/yellow_button.png" alt="">
+                <div id="anti-aliasing" class="themed-text hover-text">
                     Anti-aliasing
                 </div>
             </a>
             <a href="#">
-                <img src="images/blue_button.png" alt="">
-                <div id="page-4">
+                <img class="themed-img" src="images/themes/rnbw/green_button.png" alt="">
+                <div id="page-4" class="themed-text hover-text">
                     Coming Soon <!-- Page 4 will be hidden or commented out until it has content -->
                 </div>
             </a>
             <a href="#">
-                <img src="images/yellow_button.png" alt="">
-                <div id="page-5">
+                <img class="themed-img" src="images/themes/rnbw/blue_button.png" alt="">
+                <div id="page-5" class="themed-text hover-text">
                     Coming Soon <!-- Page 5 will be hidden or commented out until it has content -->
                 </div>
             </a>
+            <div class="dropdown">
+                <div id="fake_a">
+                    <img src="images/themes/rnbw/settings_button.png" alt="" onclick="myFunction()" class="dropbutton">
+                    <div id="settings_text" onclick="myFunction()" class="dropbutton">
+                        ▼
+                    </div>
+                </div>
+                <div id="settings" class="dropdown-content">
+                    <a href="#" onclick="setTheme(rnbwTheme)" class="themed-text">RNBW Theme</a>
+                    <a href="#" onclick="setTheme(rgbTheme)" class="themed-text">RGB Theme</a>
+                  </div>
+                  <script src="scripts/test.js"></script>
+            </div>
         </nav>
     </header>
     <main>
@@ -45,7 +58,7 @@
             <div id="shift-example">
                 <div class="container">
                     <img src="images/hue-shifting_example.png" alt="Hue-shifting example">
-                    <img class="frame" src="images/image_frame.png" alt="">
+                    <img class="frame" src="images/themes/rnbw/image_frame.png" alt="">
                     <div class="hue-overlay">
                         <div class="text-left">Without Shift</div>
                         <div class="text-right">With Shift</div>
@@ -73,7 +86,7 @@
             </div>
             <div id="shift-explanation">
                 <img src="images/hue-shifting_explanation.png" alt="">
-                <img class="frame" src="images/image_frame.png" alt="">
+                <img class="frame" src="images/themes/rnbw/image_frame.png" alt="">
                 <ul>
                     <li>Red shifts towards magenta or orange</li>
                     <li>Orange shifts towards red or yellow</li>
@@ -92,7 +105,9 @@
             <a href="site-plan.html">
                 RGB Pixels Site Plan
             </a>
+            <p>This site uses a cookie to remember the theme.</p>
         </div>
     </footer>
 </body>
+<script src="scripts/themes.js"></script>
 </html>

@@ -9,44 +9,57 @@
 </head>
 <body>
     <header>
-        <img class=nav-bar-img src="images/nav_bar.png" alt="">
+        <img id=nav-bar-img class="themed-img" src="images/themes/rnbw/nav_bar.png" alt="">
         <nav>
             <a href="#">
-                <img src="images/home_button.png" alt="">
+                <img class="themed-img" src="images/themes/rnbw/home_button.png" alt="">
             </a>
             <a href="hue-shifting.html">
-                <img src="images/red_button.png" alt="">
-                <div id="hue-shifting">
+                <img class="themed-img" src="images/themes/rnbw/red_button.png" alt="">
+                <div id="hue-shifting" class="themed-text hover-text">
                     Hue Shifting
                 </div>
             </a>
             <a href="anti-aliasing.html">
-                <img src="images/green_button.png" alt="">
-                <div id="anti-aliasing">
+                <img class="themed-img" src="images/themes/rnbw/yellow_button.png" alt="">
+                <div id="anti-aliasing" class="themed-text hover-text">
                     Anti-aliasing
                 </div>
             </a>
             <a href="#">
-                <img src="images/blue_button.png" alt="">
-                <div id="page-4">
+                <img class="themed-img" src="images/themes/rnbw/green_button.png" alt="">
+                <div id="page-4" class="themed-text hover-text">
                     Coming Soon <!-- Page 4 will be hidden or commented out until it has content -->
                 </div>
             </a>
             <a href="#">
-                <img src="images/yellow_button.png" alt="">
-                <div id="page-5">
+                <img class="themed-img" src="images/themes/rnbw/blue_button.png" alt="">
+                <div id="page-5" class="themed-text hover-text">
                     Coming Soon <!-- Page 5 will be hidden or commented out until it has content -->
                 </div>
             </a>
+            <div class="dropdown">
+                <div id="fake_a">
+                    <img src="images/themes/rnbw/settings_button.png" alt="" onclick="myFunction()" class="dropbutton">
+                    <div id="settings_text" onclick="myFunction()" class="dropbutton">
+                        ▼
+                    </div>
+                </div>
+                <div id="settings" class="dropdown-content">
+                    <a href="#" onclick="setTheme(rnbwTheme)" class="themed-text">RNBW Theme</a>
+                    <a href="#" onclick="setTheme(rgbTheme)" class="themed-text">RGB Theme</a>
+                  </div>
+                  <script src="scripts/test.js"></script>
+            </div>
         </nav>
     </header>
     <main>
         <div class="home-content">
             <div class="top-half">
-                <h2>
+                <h2 class="themed-text">
                     Welcome to RGB Pixels
                 </h2>
-                <p>
+                <p class="themed-text">
                     I'm a pixel artist. I've made the pixel art for a few modifications to Minecraft. One of those modifications is called Croptopia, and it's gotten over 10 million downloads. Pixel Art is something I've noticed many people showing interest in learning, so I made this website where people can find some starting tips about the basics of pixel art so they can get started.
                     If you've ever wanted to learn how pixel artists turn little squares into a unique image, you've come to the right place. Whether you want to make your own pixel art, or you appreciate pixel art and want to learn more about it, this site is meant for you. Everything I know about pixel art is a combination of self-teaching and basic tutorials much like the ones you'll find here.
                     Below are some examples of my work. Feel free to check out my techniques if you like what you see!
@@ -55,7 +68,7 @@
                 <div id="emotes">
                     <div class="container">
                         <img src="images/pixel-emotes.png" alt="pixel art emotes">
-                        <img class="frame" src="images/image_frame.png" alt="">
+                        <img class="frame" src="images/themes/rnbw/image_frame.png" alt="">
                         <div class="overlay">
                             <div class="text">Emotes</div>
                         </div>
@@ -64,7 +77,7 @@
                 <div id="crops">
                     <div class="container">
                         <img src="images/pixel_crops.png" alt="pixel art crops">
-                        <img class="frame" src="images/image_frame.png" alt="">
+                        <img class="frame" src="images/themes/rnbw/image_frame.png" alt="">
                         <div class="overlay">
                             <div class="text">Crops</div>
                         </div>
@@ -73,7 +86,7 @@
                 <div id="items">
                     <div class="container">
                         <img src="images/pixel_items.png" alt="pixel art items">
-                        <img class="frame" src="images/image_frame.png" alt="">
+                        <img class="frame" src="images/themes/rnbw/image_frame.png" alt="">
                         <div class="overlay">
                             <div class="text">Items</div>
                         </div>
@@ -82,7 +95,7 @@
                 <div id="foods">
                     <div class="container">
                         <img src="images/pixel_foods.png" alt="pixel art foods">
-                        <img class="frame" src="images/image_frame.png" alt="">
+                        <img class="frame" src="images/themes/rnbw/image_frame.png" alt="">
                         <div class="overlay">
                             <div class="text">Foods</div>
                         </div>
@@ -92,10 +105,12 @@
     </main>
     <footer>
         <div>
-            <a href="site-plan.html">
+            <a href="site-plan.html" class="themed-text">
                 RGB Pixels Site Plan
             </a>
+            <p>This site uses a cookie to remember the theme.</p>
         </div>
     </footer>
 </body>
+<script src="scripts/themes.js"></script>
 </html>
