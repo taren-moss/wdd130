@@ -59,7 +59,6 @@ function setTheme (theme) {
     document.querySelector('.dropbutton').src = `images/themes/${theme.rootFolder}/settings_button.png`
     setThemeRoot(theme)
     document.cookie = theme.themeName
-    console.log(document.cookie)
 }
 
 let cookieData = document.cookie
